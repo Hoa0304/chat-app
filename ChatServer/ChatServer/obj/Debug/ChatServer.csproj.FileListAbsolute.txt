@@ -1,0 +1,6 @@
+C:\Users\hoatt\source\repos\appChat\ChatServer\ChatServer\bin\Debug\ChatServer.dll
+C:\Users\hoatt\source\repos\appChat\ChatServer\ChatServer\bin\Debug\ChatServer.pdb
+C:\Users\hoatt\source\repos\appChat\ChatServer\ChatServer\obj\Debug\ChatServer.csproj.AssemblyReference.cache
+C:\Users\hoatt\source\repos\appChat\ChatServer\ChatServer\obj\Debug\ChatServer.csproj.CoreCompileInputs.cache
+C:\Users\hoatt\source\repos\appChat\ChatServer\ChatServer\obj\Debug\ChatServer.dll
+C:\Users\hoatt\source\repos\appChat\ChatServer\ChatServer\obj\Debug\ChatServer.pdb
