@@ -15,7 +15,7 @@
 
         private void InitializeComponent()
         {
-            this.chatServer1 = new ChatServer(); // Đảm bảo rằng bạn đã thêm UserControl này
+            this.chatServer1 = new ChatServer();
             this.SuspendLayout();
             // 
             // chatServer1
@@ -38,6 +38,6 @@
             this.ResumeLayout(false);
         }
 
-        private ChatServer chatServer1; // Instace của UserControl
+        private ChatServer chatServer1;
     }
 }

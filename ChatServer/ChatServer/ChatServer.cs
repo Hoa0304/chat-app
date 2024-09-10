@@ -18,7 +18,7 @@ namespace ChatServer
             InitializeComponent();
         }
 
-        public async void StartServer() // Đảm bảo phương thức này có thể được gọi từ bên ngoài
+        public async void StartServer()
         {
             listener = new TcpListener(IPAddress.Any, 5000);
             listener.Start();
@@ -55,7 +55,7 @@ namespace ChatServer
             lock (client)
             {
                 clients.Remove(client);
-            } // Xóa client khi ngắt kết nối
+            }
             LogMessage("Client disconnected.");
         }
 
@@ -91,7 +91,7 @@ namespace ChatServer
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            StartServer(); // Gọi phương thức để bắt đầu server
+            StartServer();
         }
     }
 }

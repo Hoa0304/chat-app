@@ -13,7 +13,7 @@ namespace ChatServer
         private void ServerForm_Load(object sender, EventArgs e)
         {
             // Khởi động server khi form được tải
-            chatServer1.StartServer(); // Giả sử bạn đã tạo một instance của UserControl trong designer
+            chatServer1.StartServer();
         }
     }
 }
