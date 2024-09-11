@@ -17,6 +17,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{7BE06DBB-E406-4438-88D8-0A908541DDFE}|ChatServer\\ChatServer.csproj|C:\\Users\\hoatt\\source\\repos\\appChat\\ChatServer\\chatserver\\serverform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BE06DBB-E406-4438-88D8-0A908541DDFE}|ChatServer\\ChatServer.csproj|solutionrelative:chatserver\\serverform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BE06DBB-E406-4438-88D8-0A908541DDFE}|ChatServer\\ChatServer.csproj|C:\\Users\\hoatt\\source\\repos\\appChat\\ChatServer\\chatserver\\chatserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7BE06DBB-E406-4438-88D8-0A908541DDFE}|ChatServer\\ChatServer.csproj|solutionrelative:chatserver\\chatserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,24 +30,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ServerForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\hoatt\\source\\repos\\appChat\\ChatServer\\ChatServer\\ServerForm.Designer.cs",
-              "RelativeDocumentMoniker": "ChatServer\\ServerForm.Designer.cs",
-              "ToolTip": "C:\\Users\\hoatt\\source\\repos\\appChat\\ChatServer\\ChatServer\\ServerForm.Designer.cs",
-              "RelativeToolTip": "ChatServer\\ServerForm.Designer.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCgAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T18:43:53.009Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -53,22 +44,9 @@
               "RelativeDocumentMoniker": "ChatServer\\ServerForm.cs",
               "ToolTip": "C:\\Users\\hoatt\\source\\repos\\appChat\\ChatServer\\ChatServer\\ServerForm.cs",
               "RelativeToolTip": "ChatServer\\ServerForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-09T18:43:37.026Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ChatServer.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\hoatt\\source\\repos\\appChat\\ChatServer\\ChatServer\\ChatServer.Designer.cs",
-              "RelativeDocumentMoniker": "ChatServer\\ChatServer.Designer.cs",
-              "ToolTip": "C:\\Users\\hoatt\\source\\repos\\appChat\\ChatServer\\ChatServer\\ChatServer.Designer.cs",
-              "RelativeToolTip": "ChatServer\\ChatServer.Designer.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwCUAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T18:39:32.381Z",
               "EditorCaption": ""
             },
             {
@@ -79,10 +57,47 @@
               "RelativeDocumentMoniker": "ChatServer\\ChatServer.cs",
               "ToolTip": "C:\\Users\\hoatt\\source\\repos\\appChat\\ChatServer\\ChatServer\\ChatServer.cs",
               "RelativeToolTip": "ChatServer\\ChatServer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF0AAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAuwCQAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-09T18:39:07.489Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ServerForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\hoatt\\source\\repos\\appChat\\ChatServer\\ChatServer\\ServerForm.Designer.cs",
+              "RelativeDocumentMoniker": "ChatServer\\ServerForm.Designer.cs",
+              "ToolTip": "C:\\Users\\hoatt\\source\\repos\\appChat\\ChatServer\\ChatServer\\ServerForm.Designer.cs",
+              "RelativeToolTip": "ChatServer\\ServerForm.Designer.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwBIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T18:43:53.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChatServer.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\hoatt\\source\\repos\\appChat\\ChatServer\\ChatServer\\ChatServer.Designer.cs",
+              "RelativeDocumentMoniker": "ChatServer\\ChatServer.Designer.cs",
+              "ToolTip": "C:\\Users\\hoatt\\source\\repos\\appChat\\ChatServer\\ChatServer\\ChatServer.Designer.cs",
+              "RelativeToolTip": "ChatServer\\ChatServer.Designer.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAmwFkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T18:39:32.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ChatServer.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hoatt\\source\\repos\\appChat\\ChatServer\\ChatServer\\ChatServer.cs",
+              "RelativeDocumentMoniker": "ChatServer\\ChatServer.cs",
+              "ToolTip": "C:\\Users\\hoatt\\source\\repos\\appChat\\ChatServer\\ChatServer\\ChatServer.cs [Design]",
+              "RelativeToolTip": "ChatServer\\ChatServer.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T18:38:42.747Z"
             }
           ]
         }

@@ -4,3 +4,5 @@ C:\Users\hoatt\source\repos\appChat\ChatServer\ChatServer\obj\Debug\ChatServer.c
 C:\Users\hoatt\source\repos\appChat\ChatServer\ChatServer\obj\Debug\ChatServer.csproj.CoreCompileInputs.cache
 C:\Users\hoatt\source\repos\appChat\ChatServer\ChatServer\obj\Debug\ChatServer.dll
 C:\Users\hoatt\source\repos\appChat\ChatServer\ChatServer\obj\Debug\ChatServer.pdb
+C:\Users\hoatt\source\repos\appChat\ChatServer\ChatServer\bin\Debug\Siticone.Desktop.UI.dll
+C:\Users\hoatt\source\repos\appChat\ChatServer\ChatServer\obj\Debug\ChatServer.csproj.Up2Date

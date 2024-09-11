@@ -6,3 +6,11 @@ C:\Users\hoatt\source\repos\ChatClient\ChatClient\obj\Debug\ChatClient.csproj.Co
 C:\Users\hoatt\source\repos\ChatClient\ChatClient\obj\Debug\ChatClient.csproj.Up2Date
 C:\Users\hoatt\source\repos\ChatClient\ChatClient\obj\Debug\ChatClient.dll
 C:\Users\hoatt\source\repos\ChatClient\ChatClient\obj\Debug\ChatClient.pdb
+C:\Users\hoatt\source\repos\appChat\ChatClient\ChatClient\obj\Debug\ChatClient.csproj.AssemblyReference.cache
+C:\Users\hoatt\source\repos\appChat\ChatClient\ChatClient\obj\Debug\ChatClient.csproj.CoreCompileInputs.cache
+C:\Users\hoatt\source\repos\appChat\ChatClient\ChatClient\obj\Debug\ChatClient.dll
+C:\Users\hoatt\source\repos\appChat\ChatClient\ChatClient\obj\Debug\ChatClient.pdb
+C:\Users\hoatt\source\repos\appChat\ChatClient\ChatClient\bin\Debug\ChatClient.dll
+C:\Users\hoatt\source\repos\appChat\ChatClient\ChatClient\bin\Debug\ChatClient.pdb
+C:\Users\hoatt\source\repos\appChat\ChatClient\ChatClient\bin\Debug\Siticone.Desktop.UI.dll
+C:\Users\hoatt\source\repos\appChat\ChatClient\ChatClient\obj\Debug\ChatClient.csproj.Up2Date

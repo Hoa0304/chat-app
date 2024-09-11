@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\hoatt\\source\\repos\\ChatClient\\",
+  "WorkspaceRootPath": "C:\\Users\\hoatt\\source\\repos\\appChat\\ChatClient\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8D1BA9D1-E855-49BE-975A-CEED58A38869}|ChatClient\\ChatClient.csproj|c:\\users\\hoatt\\source\\repos\\chatclient\\chatclient\\chatclient.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8D1BA9D1-E855-49BE-975A-CEED58A38869}|ChatClient\\ChatClient.csproj|C:\\Users\\hoatt\\source\\repos\\appChat\\ChatClient\\chatclient\\chatclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D1BA9D1-E855-49BE-975A-CEED58A38869}|ChatClient\\ChatClient.csproj|solutionrelative:chatclient\\chatclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D1BA9D1-E855-49BE-975A-CEED58A38869}|ChatClient\\ChatClient.csproj|c:\\users\\hoatt\\source\\repos\\appchat\\chatclient\\chatclient\\chatclient.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D1BA9D1-E855-49BE-975A-CEED58A38869}|ChatClient\\ChatClient.csproj|solutionrelative:chatclient\\chatclient.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D1BA9D1-E855-49BE-975A-CEED58A38869}|ChatClient\\ChatClient.csproj|C:\\Users\\hoatt\\source\\repos\\ChatClient\\chatclient\\chatclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{8D1BA9D1-E855-49BE-975A-CEED58A38869}|ChatClient\\ChatClient.csproj|C:\\Users\\hoatt\\source\\repos\\appChat\\ChatClient\\chatclient\\chatclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8D1BA9D1-E855-49BE-975A-CEED58A38869}|ChatClient\\ChatClient.csproj|solutionrelative:chatclient\\chatclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D1BA9D1-E855-49BE-975A-CEED58A38869}|ChatClient\\ChatClient.csproj|C:\\Users\\hoatt\\source\\repos\\ChatClient\\chatclient\\chatclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D1BA9D1-E855-49BE-975A-CEED58A38869}|ChatClient\\ChatClient.csproj|solutionrelative:chatclient\\chatclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,37 +30,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ChatClient.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\hoatt\\source\\repos\\ChatClient\\ChatClient\\ChatClient.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\hoatt\\source\\repos\\appChat\\ChatClient\\ChatClient\\ChatClient.Designer.cs",
               "RelativeDocumentMoniker": "ChatClient\\ChatClient.Designer.cs",
-              "ToolTip": "C:\\Users\\hoatt\\source\\repos\\ChatClient\\ChatClient\\ChatClient.Designer.cs",
+              "ToolTip": "C:\\Users\\hoatt\\source\\repos\\appChat\\ChatClient\\ChatClient\\ChatClient.Designer.cs",
               "RelativeToolTip": "ChatClient\\ChatClient.Designer.cs",
-              "ViewState": "AgIAAJQAAAAAAAAAAAAqwJ8AAABNAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-09T18:48:39.977Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ChatClient.cs",
-              "DocumentMoniker": "C:\\Users\\hoatt\\source\\repos\\ChatClient\\ChatClient\\ChatClient.cs",
+              "DocumentMoniker": "C:\\Users\\hoatt\\source\\repos\\appChat\\ChatClient\\ChatClient\\ChatClient.cs",
               "RelativeDocumentMoniker": "ChatClient\\ChatClient.cs",
-              "ToolTip": "C:\\Users\\hoatt\\source\\repos\\ChatClient\\ChatClient\\ChatClient.cs",
+              "ToolTip": "C:\\Users\\hoatt\\source\\repos\\appChat\\ChatClient\\ChatClient\\ChatClient.cs",
               "RelativeToolTip": "ChatClient\\ChatClient.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwCgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-09T18:23:31.405Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ChatClient.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\hoatt\\source\\repos\\ChatClient\\ChatClient\\ChatClient.cs",
+              "DocumentMoniker": "C:\\Users\\hoatt\\source\\repos\\appChat\\ChatClient\\ChatClient\\ChatClient.cs",
               "RelativeDocumentMoniker": "ChatClient\\ChatClient.cs",
-              "ToolTip": "C:\\Users\\hoatt\\source\\repos\\ChatClient\\ChatClient\\ChatClient.cs [Design]",
+              "ToolTip": "C:\\Users\\hoatt\\source\\repos\\appChat\\ChatClient\\ChatClient\\ChatClient.cs [Design]",
               "RelativeToolTip": "ChatClient\\ChatClient.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-09T18:23:07.608Z",

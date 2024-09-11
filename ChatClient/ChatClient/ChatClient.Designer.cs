@@ -11,47 +11,18 @@ using Siticone.Desktop.UI.WinForms;
 
 namespace ChatClient
 {
-    public partial class ChatClient : UserControl
+    partial class ChatClient
     {
         private System.ComponentModel.IContainer components = null;
-        private List<Message> messages = new List<Message>();
-        private TcpClient client;
-        private NetworkStream stream;
 
-        public ChatClient()
+
+        protected override void Dispose(bool disposing)
         {
-            InitializeComponent();
-            btnSend.Click += new EventHandler(btnSend_Click);
-            ConnectToServer("127.0.0.1"); // Thay đổi IP nếu cần
-        }
-
-        private async void ConnectToServer(string ipAddress)
-        {
-            client = new TcpClient();
-            await client.ConnectAsync(IPAddress.Parse(ipAddress), 5000);
-            stream = client.GetStream();
-
-            // Bắt đầu nhận tin nhắn
-            _ = Task.Run(ReceiveMessages);
-        }
-
-        private async void ReceiveMessages()
-        {
-            byte[] buffer = new byte[1024];
-            int bytesRead;
-
-            while ((bytesRead = await stream.ReadAsync(buffer, 0, buffer.Length)) != 0)
+            if (disposing && (components != null))
             {
-                string messageText = Encoding.UTF8.GetString(buffer, 0, bytesRead);
-                AddMessage(messageText);
+                components.Dispose();
             }
-        }
-
-        private void AddMessage(string messageText)
-        {
-            Message newMessage = new Message(messageText);
-            messages.Add(newMessage);
-            DisplayMessages();
+            base.Dispose(disposing);
         }
 
         private void InitializeComponent()
@@ -89,8 +60,7 @@ namespace ChatClient
             this.siticoneCustomGradientPanel1.Name = "siticoneCustomGradientPanel1";
             this.siticoneCustomGradientPanel1.Size = new System.Drawing.Size(520, 349);
             this.siticoneCustomGradientPanel1.TabIndex = 3;
-            this.siticoneCustomGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.siticoneCustomGradientPanel1_Paint);
-            // 
+            this.siticoneCustomGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.siticoneCustomGradientPanel1_Paint);            // 
             // txtMessage
             // 
             this.txtMessage.Location = new System.Drawing.Point(288, 428);
@@ -108,9 +78,9 @@ namespace ChatClient
             this.btnSend.TabIndex = 5;
             this.btnSend.Text = "Send";
             this.btnSend.UseVisualStyleBackColor = true;
-            this.btnSend.Click += new System.EventHandler(this.btnSend_Click_1);
+            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
-            // UserControl1
+            // ChatClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -121,11 +91,44 @@ namespace ChatClient
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "UserControl1";
+            this.Name = "ChatClient";
             this.Size = new System.Drawing.Size(794, 470);
             this.ResumeLayout(false);
             this.PerformLayout();
+        }
 
+        private string PromptForClientName()
+        {
+            string name = Microsoft.VisualBasic.Interaction.InputBox("Enter your name:", "Client Name", "Client");
+            return string.IsNullOrEmpty(name) ? "Client" : name;
+        }
+
+        private async void ReceiveMessages()
+        {
+            byte[] buffer = new byte[1024];
+            int bytesRead;
+
+            while ((bytesRead = await stream.ReadAsync(buffer, 0, buffer.Length)) != 0)
+            {
+                string messageText = Encoding.UTF8.GetString(buffer, 0, bytesRead);
+                AddMessage(messageText);
+            }
+        }
+
+        private void AddMessage(string messageText)
+        {
+            if (messageText.StartsWith("Server: "))
+            {
+                Message newMessage = new Message(messageText);
+                messages.Add(newMessage);
+            }
+            else
+            {
+                Message newMessage = new Message($"{clientName}: {messageText}");
+                messages.Add(newMessage);
+            }
+
+            DisplayMessages();
         }
 
         private void btnSend_Click(object sender, EventArgs e)
@@ -133,19 +136,14 @@ namespace ChatClient
             string messageText = txtMessage.Text.Trim();
             if (!string.IsNullOrEmpty(messageText))
             {
-                // Gửi tin nhắn đến server
+                // Send message to server
                 SendMessage(messageText);
                 txtMessage.Clear();
 
-                // Tạo tin nhắn mới
+                // Create a new message and display it
                 Message newMessage = new Message(messageText);
                 messages.Add(newMessage);
-
-                // Hiển thị tin nhắn
                 DisplayMessages();
-
-                // Xóa nội dung TextBox
-                txtMessage.Clear();
             }
         }
 
@@ -157,12 +155,17 @@ namespace ChatClient
 
         private void DisplayMessages()
         {
-            siticoneCustomGradientPanel1.Controls.Clear(); // Xóa tin nhắn cũ
-            int yPos = 10; // Vị trí Y bắt đầu
+            if (InvokeRequired)
+            {
+                Invoke(new Action(DisplayMessages));
+                return;
+            }
+            siticoneCustomGradientPanel1.Controls.Clear(); // Clear old messages
+            int yPos = 10; // Starting Y position
 
             foreach (var message in messages)
             {
-                // Tạo panel cho mỗi tin nhắn
+                // Create a panel for each message
                 Panel messagePanel = new Panel
                 {
                     AutoSize = true,
@@ -200,7 +203,7 @@ namespace ChatClient
 
                 Label messageLabel = new Label
                 {
-                    Text = $"{message.Timestamp.ToShortTimeString()}: {message.Text}",
+                    Text = $"{message.Timestamp.ToShortTimeString()} [{clientName}]: {message.Text}",
                     AutoSize = true,
                     BackColor = Color.Transparent,
                     TextAlign = ContentAlignment.MiddleCenter
@@ -210,19 +213,9 @@ namespace ChatClient
                 siticoneCustomGradientPanel1.Controls.Add(messagePanel);
                 yPos += messagePanel.Height + 5;
             }
-        }
 
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-                stream?.Close();
-                client?.Close();
-            }
-            base.Dispose(disposing);
         }
-
+        
         #region Designer variables
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
@@ -231,6 +224,4 @@ namespace ChatClient
         private System.Windows.Forms.Button btnSend;
         #endregion
     }
-
-   
 }
